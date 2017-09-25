@@ -1,0 +1,22 @@
+<ul>
+  <%= @songs.map do |song| %>
+  <li><%= song.title %>
+  <%= song.release_year %>
+  <%= song.released %>
+  <%= song.genre %>
+  <%= song.artist_name %></li>
+  <%end%>
+</ul>
+
+
+<tbody>
+  <% @songs.each do |song| %>
+    <tr>
+      <td><%= song.title %></td>
+      <td><%= song.release_year %></td>
+      <td><%= song.released %></td>
+      <td><%= song.genre %></td>
+      <td><%= song.artist_name %></td>
+    </tr>
+  <%end%>
+</tbody>
